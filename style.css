@@ -7,7 +7,7 @@
     font-family:arial;
 }
 body{
-    background:url("images/travel.jpg");
+    background:url("travel.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     height:100vh;
@@ -1187,4 +1187,5 @@ box-shadow:0 0 10px#000;
 .localtime{
     font-size:11px;
 }
+
 }
