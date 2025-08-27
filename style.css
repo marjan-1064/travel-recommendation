@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=WDXL+Lubrifont+TC&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:arial;
+}
+body{
+    background:url("images/travel.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    background-position:center;
+    
+}
+header{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    z-index:99;
+    box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.8);
+}
+
+/* Results container */
+/* #results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+top:20%;
+left:60%;
+  position: relative;
+  z-index: 1000;
+} */
+
+/* Individual cards */
+/* .card {
+  width: 400px;   /* between 400–500px */
+  /* height: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  text-align: center; */
+
+  /* Keep cards above other sections */
+  /* position: relative;
+  z-index: 1001;
+} */ 
+/* 
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+} */
+
+/* .card p {
+  font-size: 1rem;
+  color: #555;
+} */
+
+#chk1{
+display:none;
+}
+i{
+    color:#fff;
+    cursor:pointer;
+}
+header .logo{
+     flex:1;
+     color:#fff;
+     margin-left:50px;
+     text-transform:uppercase;
+}
+ 
+header .searchbox{
+flex:1;
+position:relative;
+} 
+.searchbox input{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    background:#f2f2f2;
+    border-radius:30px;
+    color:gray;
+    font-size:20px;
+    text-align:center;
+}
+
+.searchbox button{
+    width:40px;
+    cursor:pointer;
+    height:40px;
+    border-radius:30px;
+    border:none;
+    position:absolute;
+    top:0;
+    right:0;
+    transform:scale(0.9);
+background:green;
+} 
+
+
+header ul{
+    flex:2;
+    display:flex;
+    justify-content:space-evenly;
+} 
+header ul li{
+      list-style: none;
+}
+header ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    text-transform:uppercase;
+    padding:10px 15px;
+}
+header ul li a:hover{
+    border-bottom:2px solid cadetblue;
+}
+header .menu{
+    font-size:2.5em;
+    display:none;
+}
+.socialmedia {
+  position: absolute;
+  top: 50%;                 
+  left: 1%;               
+  /* transform: translateY(-10%); 
+  z-index: 100; */
+}
+
+.socialmedia ul{
+    display:flex;
+flex-direction:column;
+    font-size:20px;
+    gap:30px;
+}
+.socialmedia ul li {
+    list-style:none;
+}
+.socialmedia-home {
+  position: absolute;
+  top: 40%;                 
+  left: 1%;               
+  /* transform: translateY(-10%); 
+  z-index: 100; */
+}
+
+.socialmedia-home ul{
+    display:flex;
+flex-direction:column;
+    font-size:20px;
+    gap:30px;
+}
+.socialmedia-home ul li {
+    list-style:none;
+}
+.content-container .heading h1{
+    
+    position:absolute;
+    top:50%;
+     left:15%; 
+     width:200px;
+    transform:translateY(-70%);
+    font-size:50px;
+    color:white;
+text-shadow: 2px 2px 8px #000;
+} 
+
+.content-container .para p{
+    position:absolute;
+    width:500px;
+     top:65%; 
+    left:15%;
+    font-size:20px;
+    color:white;
+    text-shadow: 2px 2px 8px #000;
+} 
+.booknow{
+    position:absolute;
+    top:80%;
+    left:15%;
+    width:100px;
+    height:40px;
+    font-size:16px;
+    margin-top:20px;
+    background-color:rgb(20, 176, 163);
+    border-radius:3px;
+    border:none;
+    outline:none;
+    font-weight: 600;
+    color:#fff;
+    
+}
+
+
+.content-container-about .heading-about h1{
+    position:absolute;
+    font-size:50px;
+    width:500px;
+    top:25%;
+    left:13%;
+    color:white;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px #000;
+}
+.para-about p{
+    position:absolute;
+    width:700px;
+top:45%;
+left:13%;
+color:#fff;
+font-size:17px;
+padding:5px;
+padding:15px 20px;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.3);
+    text-shadow: 2px 2px 8px #000;
+}
+
+.ourteam{
+    position:absolute;
+    top:80%;
+    left:13%;
+    display: flex;
+    gap:100px;
+    text-shadow: 2px 2px 8px #000;
+    font-weight: 500;
+}
+.ourteam h1{
+    width:100px;
+    font-size:50px;
+    color:white;
+    text-shadow: 2px 2px 8px #000;;
+}
+ .ourteam ul{
+    display:flex;
+    list-style: none;
+     gap:20px; 
+    color:white;
+   
+} 
+.ourteam li{
+    box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.3);
+    padding:10px 15px;
+}
+.ourteam h2{
+    font-size:20px;
+}
+.ourteam button{
+    height:30px;
+    width:120px;
+    background-color: rgb(21, 179, 139);
+    color:white;
+    font-size: 14px;
+    font-weight: 600;
+    border:none;
+    border-radius:5px;
+}
+.contact-head{
+    position: absolute;
+    top:50%;
+    left:13%;
+    color:#fff;
+    font-size: 30px;
+}
+#contact-form{
+    position: absolute;
+    top:30%;
+    left:50%;
+    display:flex;
+    flex-direction: column;
+     /* align-items: center;
+    justify-content: center;  */
+    gap:15px;
+    width:400px;
+ box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.5);
+padding:10px 25px;
+    
+}
+#text{
+    color:#fff;
+}
+form input{
+    width:350px;
+    height:30px;
+    border-radius:5px;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+    border:1px solid white;
+
+}
+form textarea{
+    width:350px;
+    height:100px;
+    border-radius: 5px;
+    border:1px solid white;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+}
+#submit{
+    border-radius: 3px;
+    height:25px;
+    background-color: rgb(10, 133, 112);
+    border: none;
+    color:#fff;
+
+}
+@media(max-width:1200px){
+    header{
+        height:150px;
+    }
+    header .logo{
+        font-size:10px;
+    }
+.content-container .heading h1{
+    font-size:65px;
+    position:absolute;
+    top:30%;
+     left:15%; 
+     width:200px;}
+     .ourteam ul{
+    display:flex;
+    list-style: none;
+     gap:20px; 
+    color:white;
+     width:25%;
+     }
+   .content-container .para p{
+    position:absolute;
+    width:500px;
+     top:40%; 
+    left:15%;
+    font-size:23px;
+    color:white;
+    
+} 
+
+.booknow{
+    position:absolute;
+    top:50%;
+    left:15%;
+    width:200px;
+    height:50px;
+    font-size:16px;
+    margin-top:20px;
+    background-color:rgb(20, 176, 163);
+    border-radius:3px;
+    border:none;
+    outline:none;
+    font-weight: 600;
+    color:#fff;
+    
+}
+.content-container-about .heading-about h1{
+    top:20%;
+    font-size: 40px;
+    
+}
+.content-container-about .para-about p{
+top:30%;
+font-size: 20px;}
+.ourteam{
+    top:55%;
+}
+.contact-head{
+    position: absolute;
+    top:30%;
+    left:20%;
+    color:#fff;
+    font-size: 24px;
+}
+#contact-form{
+    position: absolute;
+    top:40%;
+    left:20%;
+    display:flex;
+    flex-direction: column;
+     /* align-items: center;
+    justify-content: center;  */
+    gap:12px;
+    width:500px;
+ box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.5);
+padding:10px 25px;
+    
+}
+
+#text{
+    color:#fff;
+}
+form input{
+    width:450px;
+    height:30px;
+    border-radius:5px;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+    border:1px solid white;
+
+}
+form textarea{
+    width:450px;
+    height:100px;
+    border-radius: 5px;
+    border:1px solid white;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+}
+#submit{
+    border-radius: 3px;
+    height:25px;
+    background-color: rgb(10, 133, 112);
+    border: none;
+    color:#fff;
+
+}
+
+}
+@media(max-width:1000px){
+    .searchbox button{
+        position:absolute;
+    }
+   
+    header ul{
+        position:fixed;
+        top:100px;
+        right:-100%;
+        background:rgba(0,0,0,0.7);
+        height:calc(100vh - 100px);
+        width:50%;
+        flex-direction:column;
+        align-items:center;
+        transition:right 0.5s linear;
+    }
+    header .menu{
+        display:block;
+        width:100px;
+text-align:center;
+    }
+    #chk1:checked~ul{
+        right:0;
+    }
+    .content-container-about .heading-about h1{
+        font-size: 40px;
+    }
+
+}
+@media(max-width:844px){
+     header{
+        height:90px;
+    }
+    header .logo h1{
+        font-size:20px;
+    }
+    header .menu{
+        font-size:1.5em;
+    }
+    .content-container .heading h1{
+    
+    position:absolute;
+    top:35%;
+     left:15%; 
+     width:200px;
+    font-size: 60px;}
+     .content-container .para p{
+        top:45%;
+     }
+     .booknow{
+        top:55%;
+        width:200px;
+     }
+     
+     .ourteam ul{
+    display:flex;
+    list-style: none;
+     gap:20px; 
+    color:white;
+     width:25%;
+     }
+    
+.socialmedia{
+    left:-1%;
+}
+.socialmedia i{
+    font-size:12px;
+}
+.content-container-about .heading-about h1{
+    font-size: 45px;
+top:20%;
+}
+   .content-container-about  .para-about p{
+    position:absolute;
+    width:500px;
+top:30%;
+left:13%;
+color:#fff;
+font-size:17px;
+padding:10px 15px;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.3);
+    text-shadow: 2px 2px 8px #000;
+}
+
+.ourteam{
+    position:absolute;
+    top:55%;
+    left:12%;
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+.ourteam h1{
+    width:200px;
+    font-size:35px;
+    color:white;
+    font-weight: bold;
+}
+ .ourteam ul{
+    width:600px;
+    display:flex;
+    list-style: none;
+     gap:20px; 
+    color:white;
+   
+} 
+.ourteam li{
+    box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.3);
+    padding:10px 15px;
+}
+.contact-head {
+    position: absolute;
+    top:20%;
+    left:11%;
+    color:#fff;
+    font-size:26px;
+    
+}
+#contact-form{
+    position: absolute;
+    top:30%;
+    left:12%;
+    display:flex;
+    flex-direction: column;
+     /* align-items: center;
+    justify-content: center;  */
+    gap:10px;
+    width:500px;
+ box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.5);
+padding:10px 25px;
+    
+}
+#text{
+    color:#fff;
+}
+form input{
+    width:450px;
+    height:30px;
+    border-radius:5px;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+    border:1px solid white;
+
+}
+form textarea{
+    width:450px;
+    height:100px;
+    border-radius: 5px;
+    border:1px solid white;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+}
+#submit{
+    border-radius: 3px;
+    height:25px;
+    background-color: rgb(10, 133, 112);
+    border: none;
+    color:#fff;
+
+}
+}
+@media(max-width:700px){
+    header{
+        height:70px;
+    }
+    header .logo h1{
+        font-size:20px;
+    }
+    header .menu{
+        font-size:1.5em;
+    }
+
+.socialmedia{
+    left:-1%;
+}
+.socialmedia i{
+    font-size:12px;
+}
+    .ourteam{
+    position:absolute;
+    top:90%;
+    left:12%;
+    display: flex;
+    flex-direction:column;
+    gap:60px;
+}
+.ourteam h1{
+    width:200px; 
+    font-size:30px;
+    color:white;
+    font-weight:bold;
+}
+ .ourteam ul{
+    display:flex;
+    list-style: none;
+     gap:20px; 
+    color:white;
+    width:10%;
+} 
+.ourteam li{
+    box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.3);
+    padding:10px 15px;
+}
+}
+
+
+@media(max-width:600px){
+     header{
+        height:80px;
+    }
+    header .logo h1{
+        font-size:15px;
+    }
+    header .menu{
+        font-size:1.5em;
+    }
+    header .logo{
+        font-size:10px;
+        margin-left:8px;
+    }
+    header ul{
+        width:100%;
+    }
+
+    .content-container .heading h1{
+    position:absolute;
+    top:30%;
+     left:20%; 
+     width:200px;
+    transform:translateY(-70%);
+    font-size:45px;
+    color:white;
+
+} 
+.content-container .para p{
+    position:absolute;
+    width:200px;
+     top:40%; 
+    left:20%;
+    font-size:17px;
+    color:white;
+    
+} 
+.socialmedia{
+    left:-4%;
+}
+.socialmedia i{
+    font-size:12px;
+}
+.booknow{
+    position:absolute;
+    top:56%;
+    left:20%;
+    width:100px;
+    height:40px;
+    font-size:16px;
+    background-color:rgb(20, 176, 163);
+    border-radius:3px;
+    border:none;
+    outline:none;
+    font-weight: 600;
+    color:#fff;
+    
+}
+.content-container-about .heading-about h1{
+    position:absolute;
+    font-size:40px;
+    width:300px; 
+    top:15%;
+    left:16%;
+    color:white;
+    font-weight: 600;
+}
+.content-container-about .para-about p{
+    position:absolute;
+    width:300px;
+top:25%;
+left:16%;
+color:#fff;
+font-size: 12px;
+}
+    .ourteam{
+    position:absolute;
+    top:50%;
+    left:17%;
+     display: flex; 
+    gap:20px;
+}
+.ourteam h1{
+    /* margin-left:10px; */
+    width:170px;
+    font-size:30px;
+    color:white;
+    font-weight:bold;
+}
+ .ourteam ul{
+     display:flex;
+    list-style: none;
+     gap:10px;  
+    color:white;
+    width:300px; 
+   height:100px;
+
+} 
+.ourteam li{
+    gap:0px;
+    font-size:8px;
+    box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.3);
+     padding:5px 9px; 
+}
+.ourteam h2{
+    font-size:10px;
+}
+.ourteam button{
+    height: 20px;
+    width:70px;
+    background-color: rgb(21, 179, 139);
+    color:white;
+    font-size: 7px;
+    font-weight: 600;
+    border:none;
+    border-radius:2px;
+} 
+.contact-head{
+    position: absolute;
+    top:20%;
+    left:15%;
+    color:#fff;
+    font-size: 15px;
+}
+#contact-form{
+    position: absolute;
+    top:30%;
+    left:15%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:310px;
+ box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.5);
+padding:10px 15px;
+    
+}
+#text{
+    color:#fff;
+}
+form input{
+    width:280px;
+    height:25px;
+    border-radius:5px;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+    border:1px solid white;
+
+}
+form textarea{
+    width:280px;
+    height:70px;
+    border-radius: 5px;
+    border:1px solid white;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+}
+#submit{
+    border-radius: 3px;
+    height:25px;
+    background-color: rgb(10, 133, 112);
+    border: none;
+    color:#fff;
+
+}
+}
+
+
+@media(max-width:387px){
+    header{
+        height:80px;
+    }
+    header .logo h1{
+        font-size:12px;
+    }
+    header .menu{
+        font-size:1.5em;
+    }
+    
+.searchbox input{
+    width:100%;
+    height:30px;
+    border:none;
+    outline:none;
+    background:#f2f2f2;
+    border-radius:30px;
+    color:gray;
+    font-size:10px;
+    text-align:left;
+    padding-left: 5px; 
+   
+}
+.searchbox button{
+    width:30px;
+    cursor:pointer;
+    height:30px;
+    border-radius:30px;
+    border:none;
+    position:absolute;
+    top:0;
+    right:0;
+    transform:scale(0.9);
+background:green;
+}
+.content-container .heading h1{
+    font-size:40px;
+    top:35%;
+}
+.content-container .para p{
+    top:45%;
+}
+.booknow{
+    top:65%;
+}
+    .content-container-about .heading-about h1{
+    position:absolute;
+    font-size:35px;
+    width:250px; 
+    top:17%;
+    left:19%;
+    color:white;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px #000;
+}
+    .content-container-about .para-about p{
+    position:absolute;
+    width:200px;
+top:27%;
+left:19%;
+color:#fff;
+font-size: 12px;
+padding:7px 10px;
+text-shadow: 2px 2px 8px #000;
+}
+.socialmedia {
+  position: absolute;
+  top: 50%;                 
+  left: -6.5%;               
+  /* transform: translateY(-10%);  */
+  /* z-index: 100; */
+}
+
+.socialmedia ul{
+    display:flex;
+flex-direction:column;
+    font-size:15px;
+    gap:25px;
+}
+
+
+
+    .ourteam{
+    position:absolute;
+    top:60%;
+    left:15%;
+     display: flex; 
+    /* gap:20px; */
+}
+
+.ourteam h1{
+    font-weight: bold;
+ font-size:20px;
+  margin-left:20px; 
+}
+  .ourteam ul{
+    left:10%;
+    top:70%;
+    display:flex;
+    list-style: none;
+     gap:10px; 
+    color:white;
+   width:250px; 
+   height:80px;
+} 
+.ourteam li{
+     padding:2px 7px; 
+}
+
+ .ourteam li p{
+    font-size:5.5px;
+} 
+ .ourteam button{
+    height: 15px;
+    width:60px;
+    background-color: rgb(21, 179, 139);
+    color:white;
+    font-size: 7px;
+    font-weight: 600;
+    border:none;
+    border-radius:2px;
+} 
+.contact-head{
+   position: absolute;
+    top:20%;
+    left:15%;
+    color:#fff;
+    font-size: 15px;
+
+}
+#contact-form{
+    position: absolute;
+    top:30%;
+    left:15%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:260px;
+ box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.5);
+padding:10px 10px;
+    
+}
+#text{
+    color:#fff;
+}
+form input{
+    width:240px;
+    height:20px;
+    border-radius:5px;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+    border:1px solid white;
+
+}
+form textarea{
+    width:240px;
+    height:65px;
+    border-radius: 5px;
+    border:1px solid white;
+    color:transparent;
+     box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.1);
+}
+#submit{
+    border-radius: 3px;
+    height:25px;
+    background-color: rgb(10, 133, 112);
+    border: none;
+    color:#fff;
+
+}
+}
+/* #results{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+top:20%;
+left:10%;
+}
+.card{
+    width:100px;
+    height:150px;
+background-color: #fff;
+
+}
+.card img{
+    height:100px;
+    width:100px;
+    width:100%;
+    object-fit: cover;
+} */
+  #results{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+top:17%;
+  left:27%;  
+gap:25px;
+
+}
+.card{
+
+    width:400px;
+    height:530px;
+background-color: #fff;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.9);
+    color:#fff;
+
+}
+.card img{
+    height:400px;
+    width:400px;
+    width:100%;
+}
+.card h2{
+    font-size: 20px;
+    text-align: center;
+}
+.card p{
+    font-size: 18px;
+}
+ @media(max-width:1200px){
+     #results{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+top:17%;
+  left:27%;  
+gap:25px;
+
+}
+.card{
+
+    width:400px;
+    height:530px;
+background-color: #fff;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.9);
+    color:#fff;
+
+}
+.card img{
+    height:400px;
+    width:400px;
+    width:100%;
+}
+.card h2{
+    font-size: 20px;
+    text-align: center;
+}
+.card p{
+    font-size: 18px;
+}
+ }
+ @media(max-width:1000px){
+      #results{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+top:17%;
+  left:20%;  
+gap:15px;
+
+}
+.card{
+
+    width:500px;
+    height:430px;
+background-color: #fff;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.9);
+    color:#fff;
+
+}
+.card img{
+    height:330px;
+    width:500px;
+    width:100%;
+}
+.card h2{
+    font-size: 20px;
+    text-align: center;
+}
+.card p{
+    font-size: 18px;
+}
+ }
+
+@media(max-width:600px){
+        #results{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+top:17%;
+  left:15%;  
+gap:15px;
+
+}
+.card{
+
+    width:300px;
+    height:310px;
+background-color: #fff;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.9);
+    color:#fff;
+
+}
+.card img{
+    height:230px;
+    width:300px;
+    width:100%;
+}
+.card h2{
+    font-size: 12px;
+    text-align: center;
+}
+.card p{
+    font-size: 11px;
+}
+}
+
+@media(max-width:387px){
+    #results{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+top:17%;
+left:19%;
+gap:15px;
+}
+.card{
+    width:235px;
+    height:260px;
+background-color: #fff;
+box-shadow:0 0 10px#000;
+    background-color:rgba(0,0,0, 0.9);
+    color:#fff;
+
+}
+.card img{
+    height:180px;
+    width:230px;
+    width:100%;
+}
+.card h2{
+    font-size: 12px;
+    text-align: center;
+}
+.card p{
+    font-size: 11px;
+}
+.card h3{
+    font-size:12px;
+}
+.localtime{
+    font-size:11px;
+}
+}

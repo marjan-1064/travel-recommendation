@@ -1,0 +1,210 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "cities": [
+        {
+          "name": "Sydney, Australia",
+          "imageUrl": "images/sydney.jpg",
+          "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge.",
+          "timeZone": "Australia/Sydney"
+        },
+        {
+          "name": "Melbourne, Australia",
+          "imageUrl": "images/melbourne.jpg",
+          "description": "A cultural hub famous for its art, food, and diverse neighborhoods.",
+          "timeZone": "Australia/Melbourne"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "cities": [
+        {
+          "name": "Tokyo, Japan",
+          "imageUrl": "images/tokyo.jpg",
+          "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture.",
+          "timeZone": "Asia/Tokyo"
+        },
+        {
+          "name": "Kyoto, Japan",
+          "imageUrl": "images/kyoto.jpg",
+          "description": "Known for its historic temples, gardens, and traditional tea houses.",
+          "timeZone": "Asia/Tokyo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Brazil",
+      "cities": [
+        {
+          "name": "Rio de Janeiro, Brazil",
+          "imageUrl": "images/rio.jpg",
+          "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks.",
+          "timeZone": "America/Sao_Paulo"
+        },
+        {
+          "name": "São Paulo, Brazil",
+          "imageUrl": "images/sao-paulo.jpg",
+          "description": "The financial hub with diverse culture, arts, and a vibrant nightlife.",
+          "timeZone": "America/Sao_Paulo"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pakistan",
+      "cities": [
+        {
+          "name": "Kashmir",
+          "imageUrl": "images/kashmir.jpg",
+          "description": "Renowned for its natural beauty, valleys, rivers, and mountains, often called 'Paradise on Earth'.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Islamabad",
+          "imageUrl": "images/islamabad.jpg",
+          "description": "The capital city of Pakistan, celebrated for its greenery, modern infrastructure, and Faisal Mosque.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Sargodha",
+          "imageUrl": "images/sargodha.jpg",
+          "description": "Known as the 'City of Eagles', Sargodha is famous for its kinnow (oranges) and military significance.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Karachi",
+          "imageUrl": "images/karachi.jpg",
+          "description": "The largest city and financial hub of Pakistan.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Rawalpindi",
+          "imageUrl": "images/rawalpindi.jpg",
+          "description": "A twin city of Islamabad, rich in history and culture, with a mix of modern and traditional markets.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Lahore",
+          "imageUrl": "images/lahore.jpg",
+          "description": "The city of Pakistan famous for its Mughal architecture, food, and vibrant festivals.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Wah",
+          "imageUrl": "images/wah.jpg",
+          "description": "Known for Wah Cantt and its historical Mughal gardens, as well as its industrial significance.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Multan",
+          "imageUrl": "images/multan.jpg",
+          "description": "The 'City of Saints', famous for its Sufi shrines, handicrafts, and mangoes.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Murree",
+          "imageUrl": "images/murree.jpg",
+          "description": "A popular hill station known for its pine forests, cool climate, and scenic beauty.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Quetta",
+          "imageUrl": "images/quetta.jpg",
+          "description": "The 'Fruit Garden of Pakistan', surrounded by mountains and famous for its orchards and Pashtun culture.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Sibbi",
+          "imageUrl": "images/sibbi.jpg",
+          "description": "Known for its annual Sibbi Mela and rich cultural heritage in Balochistan.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Faisalabad",
+          "imageUrl": "images/faisalabad.jpg",
+          "description": "An industrial hub often called the 'Manchester of Pakistan', known for its textile industry.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Peshawar",
+          "imageUrl": "images/peshawar.jpg",
+          "description": "One of the oldest cities in South Asia, rich in Pashtun culture and history, and a gateway to Central Asia.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Gujranwala",
+          "imageUrl": "images/gujranwala.jpg",
+          "description": "Known as the 'City of Wrestlers', also famous for its strong industrial and agricultural base.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Sheikhupura",
+          "imageUrl": "images/sheikhupura.jpg",
+          "description": "A historic city with Hiran Minar, built during the Mughal era by Emperor Jahangir.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Skardu",
+          "imageUrl": "images/skardu.jpg",
+          "description": "A gateway to some of the world's highest peaks, known for its breathtaking landscapes and lakes.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Naran",
+          "imageUrl": "images/naran.jpg",
+          "description": "A scenic valley in Khyber Pakhtunkhwa, famous for Lake Saiful Muluk and its alpine landscapes.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Hazara",
+          "imageUrl": "images/hazara.jpg",
+          "description": "A mountainous region with lush valleys, diverse culture, and beautiful lakes such as Lulusar.",
+          "timeZone": "Asia/Karachi"
+        },
+        {
+          "name": "Hyderabad",
+          "imageUrl": "images/hyderabad.jpg",
+          "description": "A historic city in Sindh, famous for its tombs, Sindhi culture, and handicrafts.",
+          "timeZone": "Asia/Karachi"
+        }
+      ]
+    }
+  ],
+  "temples": [
+    {
+      "id": 1,
+      "name": "Angkor Wat, Cambodia",
+      "imageUrl": "images/angkor-wat.jpg",
+      "description": "A UNESCO World Heritage site and the largest religious monument in the world.",
+      "timeZone": "Asia/Phnom_Penh"
+    },
+    {
+      "id": 2,
+      "name": "Taj Mahal, India",
+      "imageUrl": "images/taj-mahal.jpg",
+      "description": "An iconic symbol of love and a masterpiece of Mughal architecture.",
+      "timeZone": "Asia/Kolkata"
+    }
+  ],
+  "beaches": [
+    {
+      "id": 1,
+      "name": "Bora Bora, French Polynesia",
+      "imageUrl": "images/bora bora.jpg",
+      "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows.",
+      "timeZone": "Pacific/Tahiti"
+    },
+    {
+      "id": 2,
+      "name": "Copacabana Beach, Brazil",
+      "imageUrl": "images/copacabana.jpg",
+      "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views.",
+      "timeZone": "America/Sao_Paulo"
+    }
+  ]
+}
